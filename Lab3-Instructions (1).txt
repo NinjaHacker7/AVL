@@ -1,0 +1,56 @@
+CPS305 Lab 3
+
+---------------------------
+
+Topics: 
+------
+  Trees, BST and AVL
+
+Files:
+------
+  Lab3-studentnumber.py
+  Incorrectly named files will receive a mark of zero.
+
+Submit Files:
+------------
+  Submit your file through D2L
+  Your file should not have any print statements in it.
+  You will lose a mark for every print statement.
+  
+Summary:
+--------
+
+Given:  You are given a Python Class template. In this template, there
+        are 2 classes: MyBST, MyAVL. The goal of this lab is to
+        implement binary search trees and AVL trees.
+       
+Task:   - First, create a method called getName() that returns your 
+        name. If this does not work, you will receive a mark of zero.  
+        
+        - A class called MyBST is given. Write the method insert(x) to 
+        meet the definitions of a Binary Search Tree. Write the method 
+        called __contains__(x) to return true if x is in the tree.
+        
+        - The following methods: getLeft(), getRight(), getData(), are 
+        given. Do not change them. The method __init__(x) is also given. 
+        You may add to this. You are to implement the insert(x) and
+        getHeight() methods. Each child should itself be a MyBST object. 
+
+        - The insert(x) method should be implemented with a recursive 
+        algorithm that inserts a new node to the tree. The getHeight() 
+        method should return the height of the node. The height of a 
+        leaf node should be zero. 
+        
+        - A class called MyAVL that extends MyBST is given. Override 
+        the method insert(x) to meet the definitions of an AVL Tree. 
+        Implement the method called getBalanceFactor() that returns the 
+        balance factor of the node. It is suggested that you implement 
+        the methods leftRotate() and rightRotate().
+        
+Rule:   You cannot use Python's list in your implementation. This 
+        includes the methods appends, pop, etc. You are not allow to 
+        use any other ADTs such as Queue or Stack.
+
+Use Lab3Tester.py to test your code
+Example command line:
+$python Lab3Tester.py Lab3-123456789.py
